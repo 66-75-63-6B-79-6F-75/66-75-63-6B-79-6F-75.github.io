@@ -14,6 +14,9 @@ body {
     font-family: 'Roboto Mono', monospace;
     
     flex-direction: column;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 h1 {
@@ -30,27 +33,34 @@ p {
     color: white;
 }
 
-.container {
+.PortTitle {
     border:1px solid rgb(0, 255, 0);
     border-radius: 4px;
     align-self: center;
 
     display: flex;
     padding: 1rem 3rem;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    
 }
 
 .fadeIn {
     color: rgb(0, 255, 0);
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
     margin: 0 auto;
 }
 
-.TextFade {
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
+.TextFade > .Proj1 {
+    
+    color: white;
+    font-size: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 255, 0);
+    align-self: center;
+    display: inline-block;
+    padding: 1rem 3rem;
+    position: relative;
+}
+
+.TextFade > .Proj1 > .Prj1img {
+    scale: 200px;
+    width: 1000px;
 }
